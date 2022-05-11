@@ -4,6 +4,82 @@
     padding: 50px;
     height: 100%;
 }*/
+
+/* SETUP */
+* {
+    box-sizing: border-box;
+}
+
+header, footer, main {
+    background-color: #1f2937;
+    font-size: 18px;
+    color: #f9faf8;
+}
+/*
+section {
+    border: 4px solid lime;
+    
+}
+*/
+
+/* STRUCTURE */
+body {
+    display: flex;
+    flex-direction: column;
+   /* border: 10px solid blue;*/
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+    /*border: 10px solid pink;*/
+}
+
+inner-column {
+    display: block;
+    /*border: 4px solid orange;*/
+    width: 90%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+header inner-column {
+    padding: 10px;
+    
+}
+
+footer inner-column {
+    padding: 10px;
+    
+}
+
+.about-me-image {
+    display: block;
+    
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    }
+
+button {
+    background-color: #3882F6;
+    color: #e5e7eb;
+    padding: 6px 20px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 12px;
+    border: none;
+    text-align: center;
+    margin: 2px 8px;
+    border-radius: 4px;
+}
+
+
 body {
     background-color: #e5e7eb;
     padding: 0;
@@ -12,18 +88,10 @@ body {
     font-family: Roboto, arial;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    color: #f9faf8;
-    background-color: #1f2937;
-    margin-left: 50px;
-}
-
 .header-menu {
     display: flex;
     flex-direction: row;
-    padding: 10px 0px 20px 50px;
+    
     align-items: center;
 }
 
@@ -34,7 +102,7 @@ body {
 }
 
 .header-links {
-    font-size: 18px;
+    color: #f9faf8;
     margin-left: auto;
     padding: 0px 100px 0px 0px;  
 }
@@ -42,12 +110,19 @@ body {
 ul {
     list-style-type: none;
     display: flex;
+    color: #f9faf8;
     margin: 0;
     padding: 0;
     gap: 30px;
 }
 
+.header-links, p {
+    
+}
+
+
 .header-links a {
+    font-size: 18px;
     color: #f9faf8;
     display: flex;
     flex-direction: row;
@@ -58,20 +133,23 @@ ul {
 }
 
 .about-me {
-    display: flex;
-    align-items: left;
-    justify-content: space-between;
+    display: block;
+    background-color: #1f2937;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+    
     
 }
 
 .about-me-text {
-    font-size: 48px;
-    font-weight: extra-bold;
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: left;
-    padding-left: 20px;
+    
+    display: block;
+    
 }
 
 .about-me-text p {
@@ -79,13 +157,19 @@ ul {
 }
 
 .about-me-image {
-    max-width: 100%;
-    height: auto;
-    margin-top: 50px;
-    padding: 30px 100px 50px 20px;
-    
+
 }
 
-button {
-    background-color: #3882F60;
+@media (min-width: 700px) {
+    .about-me {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .about-me :is(.about-me-text, .about-me-image) {
+        flex-basis: 50%;
+    }
 }
+
+

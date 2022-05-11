@@ -6,37 +6,122 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <div class="container">
-        <nav class="header-menu">
-            <div class="header-logo">
-                <img src="./Images/smallProgrammer-white.png" alt="girl sitting at a computer" />
-            </div>
-            <div class="header-links">
-                <ul>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Sample Projects</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
 
-        <div class="about-me">
-            <div class="about-me-text">
-                <h1>This website is awesome!</h1>
-                <p>This website is another try at creating a landing page.
-                    Click here if you want to know more about me.</p>
-                <button type="button">Click Here</button>
+    <header>
+        <inner-column>
+            <nav class="header-menu">
+                <div class="header-logo">
+                    <img src="./Images/smallProgrammer-white.png" alt="girl sitting at a computer" />
+                </div>
+                <div class="header-links">
+                    <ul>
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">Sample Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </inner-column>
+
+
+
+    </header>
+
+    <main>
+
+        <section>
+            <inner-column>
+                <div class="about-me">
+                    <div class="about-me-text">
+                        <h1>This website is awesome!</h1>
+                        <p>This website is another try at creating a landing page.
+                            Click here if you want to know more about me.</p>
+                        <button type="button">Sign Up</button>
+                    </div>
+                    <div class="about-me-image">
+                        <img src="./Images/girl-of-the-world.png" alt="Girl conquering the world" />
+                    </div>
+                </div>
+            </inner-column>
+        </section>
+
+        <section>
+            <div class="information">
+                <inner-column>
+                    <h1>Some Random Information</h1>
+                    <div class="info-image">
+                        <div class="girl-image">
+                            <img src="./Images/girl-on-horse.png" alt="Girl on horse"/>
+                            <p>Our students excel in horse riding. Our stables are the envy
+                                of every school.</p>
+                        </div>
+                        <div class="girl-image">
+                            <img src="./Images/girl-doing-yoga.png" alt="Girl doing yoga"/>
+                            <p>Our students love yoga. Our campus provides the perfect
+                                background for meditation.</p>
+                        </div>
+                        <div class="girl-image">
+                            <img src="./Images/girl-playing-piano.png" alt="Girl playing piano"/>
+                            <p>Our students are accomplished musicians. They perform in 
+                                several concerts throughout the year.</p>
+                        </div>
+                        <div class="girl-image">
+                            <img src="./Images/girl-thinking.png" alt="Girl thinking"/>
+                            <p>Our students can do anything and be anything. The possibilites
+                                are endless.</p>
+                        </div>
+                    </div>
+                </inner-column>
             </div>
-            <div class="about-me-image">
-                <img src="./Images/computerScreen.jpg" alt="computer screen" />
-            </div>
-        </div>
-    </div>
+
+        </section>
+
+        <section>
+            <inner-column>
+                <div class="quotation">
+                    <p class="quote">"We cannot all succeed when half of us are held back. 
+                        We call upon our sisters around the world to be brave – to embrace 
+                        the strength within themselves and realize their full potential."</p>
+                        <p class="quoter">--  Malala Yousafzai</p>
+                </div>
+                
+            </inner-column>
+        </section>
+
+        <section>
+            <inner-column>
+                <div class="action">
+                    <div class="action-text">
+                        <p  class="action-header">Call to action! It's time!</p>
+                        <p class="action-subtext">Sign up for our product by clicking that button right over there!</p>
+                    </div>
+                    <button class="action-button"> Sign-up</button>
+        
+                </div>
+            </inner-column>
+        </section>
+
+
+
+
+
+    </main>
+
+
+    <footer>
+        <section>
+            <inner-column>
+                <div class="footer">
+                    <p> Copyright © The Odin Project 2021 </p>
+                </div>
+            </inner-column>
+        </section>
+    </footer>
 </body>
 
 </html>
